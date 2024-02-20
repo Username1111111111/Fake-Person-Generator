@@ -15,6 +15,7 @@ const generateUsers = async ({ region, errors, seed, amount }) => {
         amount,
     };
 
+    // const req = new Request(`http://localhost:3000/api/`, {
     const req = new Request(`https://faker-magic.onrender.com/api/`, {
         method: "POST",
         headers: {
